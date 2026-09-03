@@ -100,13 +100,15 @@ section h1, h2, h3 {
     background-color: #ffffff;
     background-image: none;
     text-align: center;
+    overflow-wrap: anywhere;
 }
 img {
     margin: auto;
     aspect-ratio: 1;
-    width: 400px;
-    height: 400px;
-    max-width: 100%;
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    object-fit: contain;
     flex-shrink: 0;
 }
 section .container {
@@ -117,6 +119,31 @@ section .container {
 }
 .text-container {
     flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+@media (max-width: 600px) {
+    main {
+        padding: 20px 10px;
+    }
+
+    section {
+        padding: 16px;
+    }
+
+    section .container {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    section .container img {
+        max-width: 100%;
+    }
+
+    button {
+        max-width: 100%;
+        white-space: normal;
+    }
 }
 footer {
     text-align: center;
