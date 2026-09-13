@@ -122,7 +122,10 @@ section .container {
     min-width: 0;
     overflow-wrap: anywhere;
 }
-@media (max-width: 600px) {
+section .gallery {
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
     main {
         padding: 20px 10px;
     }
