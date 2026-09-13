@@ -72,9 +72,16 @@ button.home-button:hover {
     color: white;
 }
 button.order-button {
-    background-color:#e2d3ff;
+    background-color:#fcdf47;
 }
 button.order-button:hover {
+    background-color:#e0c021;
+    color: white;
+}
+button.next-button {
+    background-color:#e2d3ff;
+}
+button.next-button:hover {
     background-color:#c1aaff;
     color: white;
 }
